@@ -5,4 +5,4 @@
 # - check whether file exists
 # - if so, say "it exists" if not, say "not found"
 
-if ls $1 >/dev/null; then echo file exists; else echo file not found; fi
+if ls $1 >/dev/null 2>/dev/null; then echo file exists; else echo file not found; fi
