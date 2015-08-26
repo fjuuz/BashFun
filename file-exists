@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# TODO:
+# - take a file name as the first argument
+# - check whether file exists
+# - if so, say "it exists" if not, say "not found"
+
+if ls $1; then echo file exists; else echo file not found; fi
