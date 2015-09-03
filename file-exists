@@ -2,7 +2,7 @@
 
 if test -z $1
 then 
-  echo bad usage >&2 
+  echo Bad usage. >&2 
   exit 255 
 fi
 
