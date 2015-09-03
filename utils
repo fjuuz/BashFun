@@ -1,0 +1,8 @@
+# fatalError() - Exit with ...
+# $1 Error message
+# $2 Exit code
+function fatalError() {
+  echo $1 >&2
+  exit $2
+}
+

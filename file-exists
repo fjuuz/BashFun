@@ -1,15 +1,7 @@
 #!/bin/bash
 
-if test -z $1
-then 
-  echo Bad usage. >&2 
-  exit 255 
-fi
+source utils
 
-if ls $1 >/dev/null 2>&1
-then 
-  exit 0
-else
-  echo File not found. >&2 
-  exit 1
-fi
+test -z $1 && fatalError "Bad usage." 255
+ls $1 >/dev/null 2>&1 || fatalError "File not found." 1
+
