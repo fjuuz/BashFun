@@ -3,5 +3,5 @@
 source utils
 
 test -z $1 && fatalError "Bad usage." 255
-ls $1 >/dev/null 2>&1 || fatalError "File not found." 1
+ls $1 >/dev/null 2>&1 || fatalError "$1: File not found" 1
 
