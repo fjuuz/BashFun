@@ -10,6 +10,6 @@ if ls $1 >/dev/null 2>/dev/null
 then 
   exit 0
 else
-  echo file not found >&2 
+  echo File not found. >&2 
   exit 1
 fi
