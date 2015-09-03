@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# TODO:
-# - take a file name as the first argument
-# - check whether file exists
-# - if so, say "it exists" if not, say "not found"
-
 if test -z $1
 then 
   echo bad usage 
