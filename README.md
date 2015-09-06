@@ -5,6 +5,7 @@ Bash is fun!
 * Bad `/Users/salutis/Documents/BashFun/file-exists: xyz: File not found`
 * Good `file-exists: xyz: File not found`
 
-# Bonus homework
+# Bonus homework  - partially done
 
 * Sanitize `fatalError`'s input arguments
+* print line # where number of arguemnts was not equal 2
