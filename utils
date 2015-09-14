@@ -2,12 +2,7 @@
 # $1 Error message
 # $2 Exit code
 function fatalError() {
-  if [ $# -eq 2 ]
-  then 
+    test $# -ne 2 && exit 255 
     echo $1 >&2
     exit $2
-  else 
-    echo function ${FUNCNAME}: 2 arguments required
-    exit 255
-  fi
 }
