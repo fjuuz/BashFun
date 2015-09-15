@@ -1,4 +1,5 @@
 usageError() {
+  test $# -ne 1 && usageError "$FUNCNAME message"
   fatalError "Usage: $1" 255
 } 
 
