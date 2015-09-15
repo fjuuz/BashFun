@@ -1,8 +1,9 @@
-# fatalError() - Exit with ...
-# $1 Error message
-# $2 Exit code
 function fatalError() {
-    test $# -ne 2 && exit 255 
-    echo $1 >&2
-    exit $2
+  if test $# -ne 2  
+  then
+	echo "Usage: $FUNCNAME message exit_code" >&2
+	exit 255
+  fi
+  echo $1 >&2
+  exit $2
 }
