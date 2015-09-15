@@ -1,6 +1,5 @@
 fatalError() {
-  test $# -ne 2 && \
-    fatalError "Usage: $FUNCNAME message exit_code" 255
+  test $# -ne 2 && fatalError "Usage: $FUNCNAME message exit_code" 255
   echo $1 >&2
   exit $2
 }
