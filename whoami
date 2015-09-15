@@ -3,5 +3,5 @@
 . utils
 
 SELF="$(basename "$0")"
-test $# -ne 0 && fatalError "Usage: $SELF" 255
+test $# -ne 0 && usageError "$SELF" 
 echo $USER

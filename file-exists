@@ -4,7 +4,7 @@ source utils
 
 SELF="$(basename "$0")"
 
-test $# -ne 1 && fatalError "Usage: $SELF file" 255
+test $# -ne 1 && usageError "$SELF file"
 
 ls "$1" >/dev/null 2>&1 || fatalError "$SELF: $1: File not found" 1
 
