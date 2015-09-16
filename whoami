@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. utils
+source utils
 
 test $# -ne 0 && usageError "$SELF" 
 echo $USER
