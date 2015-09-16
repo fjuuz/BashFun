@@ -2,5 +2,5 @@
 
 source utils
 
-test $# -ne 0 && usageError "$SELF" 
+test $# -eq 0 || usageError "$SELF" 
 echo $USER
