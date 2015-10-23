@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source utils
+source lib-error
 
 test $# -ne 1 && usageError file
 
