@@ -2,7 +2,7 @@
 
 source utils
 
-test $# -eq 1 || usageError "$SELF file"
+test $# -ne 1 && usageError "$SELF file"
 
 ls "$1" >/dev/null 2>&1 || fatalError "$SELF: $1: File not found" 1
 
