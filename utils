@@ -1,12 +1,14 @@
+#!/bin/bash 
+
 SELF="$(basename "$0")"
 
 usageError() {
   test $# -ne 1 && usageError "$FUNCNAME message"
-  fatalError "Usage: $1" 255
+  fatalError "Usage: $SELF $1" 255
 } 
 
 fatalError() {
   test $# -ne 2 && usageError "$FUNCNAME message exit_code" 
-  echo $1 >&2
+  echo $SELF: $1 >&2
   exit $2
 }

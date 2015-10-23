@@ -2,7 +2,7 @@
 
 source utils
 
-test $# -ne 1 && usageError "$SELF file"
+test $# -ne 1 && usageError file
 
 test -d "$1" && test -z "$(ls "$1")" && exit 0
 test -s "$1" && exit 1
